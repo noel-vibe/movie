@@ -6,13 +6,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Outlet } from 'react-router-dom';
+import logo from './logo.png';
 
 const AppLayout = () => {
   return (
     <div data-bs-theme="dark">
         <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="/"><img width={100}  src="https://i.namu.wiki/i/-YdUQ7xyf-uv99jbCXMYvAz9u6nAqlEK1AszkdhqBKka_benX5DZ3j5i7Q6coGshNWGwuyT_1X-ls40f2TXHcQ.svg"/></Navbar.Brand>
+        <Navbar.Brand href="/"><img width={100} src="https://oopy.lazyrockets.com/api/v2/notion/image?src=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd05ded51-54bf-4174-8b7e-e021c6eb6b5a%2FWATCHA_LOGO.svg&blockId=400d70c6-5698-4877-9ddf-83be123fb341" className='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
