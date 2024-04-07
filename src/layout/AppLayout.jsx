@@ -12,7 +12,7 @@ const AppLayout = () => {
     <div data-bs-theme="dark">
         <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="/"><img width={100}  src="https://cdn.freelogovectors.net/wp-content/uploads/2023/04/netflix_logo_2001-freelogovectors.net_.png"/></Navbar.Brand>
+        <Navbar.Brand href="/"><img width={100}  src="https://i.namu.wiki/i/-YdUQ7xyf-uv99jbCXMYvAz9u6nAqlEK1AszkdhqBKka_benX5DZ3j5i7Q6coGshNWGwuyT_1X-ls40f2TXHcQ.svg"/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
