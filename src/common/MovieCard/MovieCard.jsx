@@ -8,6 +8,16 @@ import { useMovieGenreQuery } from '../../hooks/useMovieGenre';
 const MovieCard = ({movie}) => {
 
   const{data:genreData} = useMovieGenreQuery()
+
+  const showGenre=(genreIdList)=>{
+    if(!genreData) return []
+    const genreNameList=genreIdList.map((id)=>{
+      const genreObj = genreData.find((genre)=>genre.id === id)
+      return genreObj.name;
+    })
+
+    return genreNameList
+  }
   return (
     <div className="movie-card"
         style={{
@@ -18,10 +28,13 @@ const MovieCard = ({movie}) => {
         }}>
         <div className="overlay">
             <h2>{movie.title}</h2>
-            {movie.genre_ids.map((id)=><Badge bg="danger">{id}</Badge>)}
             <div>
-                <div><FontAwesomeIcon icon={faStar} />{movie.vote_average.toFixed(1)}</div>
-                <div><FontAwesomeIcon icon={faUsers} />{movie.popularity}</div>
+              {showGenre(movie.genre_ids).map
+              ((id)=><Badge className="genre-badge" bg="danger">{id}</Badge>)}
+            </div>
+            <div>
+                <div><FontAwesomeIcon className="genre-badge" icon={faStar} />{movie.vote_average.toFixed(1)}</div>
+                <div><FontAwesomeIcon className="genre-badge" icon={faUsers} />{movie.popularity}</div>
                 <div>{movie.adult?'over18':'under18'}</div>
             </div>
         </div>
