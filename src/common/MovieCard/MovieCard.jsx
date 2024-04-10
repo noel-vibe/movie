@@ -33,8 +33,8 @@ const MovieCard = ({movie}) => {
               ((id)=><Badge className="genre-badge" bg="danger">{id}</Badge>)}
             </div>
             <div>
-                <div><FontAwesomeIcon className="genre-badge" icon={faStar} />{movie.vote_average.toFixed(1)}</div>
-                <div><FontAwesomeIcon className="genre-badge" icon={faUsers} />{movie.popularity}</div>
+                <div><FontAwesomeIcon className="genre-badge"/>⭐️ {movie.vote_average.toFixed(1)}</div>
+                <div><FontAwesomeIcon className="genre-badge"/>👨‍👩‍👧‍👦 {movie.popularity.toFixed(0)}</div>
                 <div>{movie.adult?'over18':'under18'}</div>
             </div>
         </div>
