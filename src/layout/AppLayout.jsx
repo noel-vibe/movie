@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Outlet, useNavigate } from 'react-router-dom';
 
 
@@ -31,7 +30,7 @@ const AppLayout = () => {
           >
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/movies">Movies</Nav.Link>
-            <Nav.Link href="/movies:id">MovieDetail</Nav.Link>
+
           </Nav>
           <Form className="d-flex" onSubmit={searchByKeyword}>
             <Form.Control

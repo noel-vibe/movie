@@ -1,0 +1,25 @@
+  .movie-title {
+    font-size: 65px;
+  }
+  .movie-number {
+    font-size: 20px;
+  }
+  
+  .movie-detail-badge {
+    font-size: 15px;
+    width: 120px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+
+  .card-icon{
+    margin-right: 10px;
+    color: rgb(255, 238, 0);
+}
+
+.icon-text{
+  margin-right: 10px;
+}
